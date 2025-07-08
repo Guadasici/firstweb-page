@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+* {
+  margin: 0px;
+  font-family: 'Source Serif 4', serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: #264653;
+  color: #efede6;
+  font-style: italic;
+  padding: 10px;
+  font-size: 2rem;
+}
+header .brand {
+  display: inline-block;
+}
+header nav {
+  float: right;
+  padding: 0;
+  list-style: none;
+  ul {
+    margin-bottom: 0.5rem;
+    a {
+      margin: 3px;
+      text-decoration-line: none;
+      color: #3a909f;
+      font-size: 1.5rem;
+    }
+  }
+}
+header nav ul a:hover {
+  color: #e76f51;
+}
+header nav ul a:active {
+  color: white;
+  background-color: #e9c46a;
+}
+#home {
+  background-color: #efede6;
+  color: #264653;
+  .start {
+    margin: 2rem;
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+    h2 {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+    }
+    #change {
+      --bs-gutter-x: 0rem;
+    }
+    .card {
+      background-color: #dcd6c4;
+      border: 1px solid #afafa0;
+      box-shadow: 2px 2px 5px#9bacb9;
+      width: 100%;
+      max-width: 300px;
+      margin: 1rem;
+
+      img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 0.3rem;
+        border-end-end-radius: 0; /* solo la parte de abajo no se hace redonda*/
+        border-end-start-radius: 0;
+      }
+    }
+  }
+
+  #subti1 {
+    background-color: #abbcc8;
+    border-radius: 1rem;
+    margin-bottom: 15px;
+    border: 1px solid #94a2b1;
+  }
+  #medio {
+    background-color: #bdbec5;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px #1c3c54;
+    border: 1px solid rgb(118, 123, 160);
+    h3 {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+    p {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin-bottom: 0.25rem;
+    }
+  }
+}
+.container {
+  width: auto;
+  max-width: 700px;
+  min-width: 300px;
+  margin: auto;
+  margin-top: 10px;
+}
+main {
+  margin-bottom: 1rem;
+}
+main h1 {
+  font-size: 2rem;
+}
+main label {
+  display: block;
+  font-size: 1.2rem;
+  margin: 15px 0px;
+}
+input,
+textarea {
+  width: 95%;
+  color: #1c3c54;
+  border: 2px solid #1c8394;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 12px #838470;
+}
+input:hover,
+textarea:hover {
+  background-color: #cecec5;
+  border: 2px solid rgb(55, 67, 112);
+}
+textarea {
+  height: auto;
+  min-height: 100px;
+}
+button {
+  border: 0;
+  border-radius: 8px;
+  color: #efede6;
+  font-size: 1rem;
+  padding: 10px 20px;
+  background: #1c8394;
+  margin-top: 20px;
+  a {
+    color: #efede6;
+    text-decoration: none;
+  }
+}
+button:hover {
+  background-color: #0a505d;
+  border-color: #48270c;
+}
+#contact {
+  background-color: #efede6;
+  color: #264653;
+}
+footer {
+  padding: 1rem;
+  background-color: #264653;
+  color: #efede6;
+  h4 {
+    margin-left: 2rem;
+  }
+  li {
+    color: #efede6;
+    font-style: italic;
+  }
+  a {
+    color: #efede6;
+  }
+}
+#portfolio {
+  background-color: #efede6;
+  color: #264653;
+  h1,
+  h2 {
+    margin-left: 5rem;
+    margin-top: 1rem;
+  }
+  section {
+    border-radius: 5px;
+    padding: 3px 10px;
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  article {
+    background-color: rgb(210, 199, 189);
+    padding: 1rem;
+    border-radius: 8px;
+    min-width: 200px;
+    max-width: 200px;
+    width: auto;
+    transition: 0.7s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 4.2rem;
+    img {
+      width: 100%;
+      height: 270px;
+      border-radius: 5px;
+      object-fit: cover;
+      margin-bottom: 8px;
+    }
+    button {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+    }
+  }
+}
+#portfolio article:hover {
+  box-shadow: 2px 2px 12px #838470;
+  transform: scale(1.02);
+}
+#about-me {
+  background-color: #efede6;
+  color: #264653;
+
+  #centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+  }
+  .texto {
+    box-shadow: 2px 2px 7px #365369;
+    text-align: center;
+    max-width: 1200px;
+    width: auto;
+    padding: 1rem;
+    background-color: #dbdbcd;
+    border: 1px solid #aeaf9c;
+    border-radius: 1rem;
+    p {
+      margin-bottom: 0.25rem; /* texto mas pegadito */
+    }
+  }
+}
+footer nav img {
+  width: 50px;
+  float: right;
+  padding: 5px;
+}
+footer nav img :hover {
+  position: fixed;
+}
+.box {
+  color: white;
+  max-width: 430px;
+  width: 100%;
+  height: 250px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #26325a;
+  border-radius: 1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.7 ease;
+  filter: grayscale(100%); /* lo pone blanco y negro */
+  h2 {
+    font-size: 2rem;
+    transition: font-size 0.5s ease;
+  }
+}
+.box:hover {
+  border-color: #b99e97;
+  transform: scale(1.1);
+  filter: grayscale(0%) drop-shadow(0 8px 8px #0a183d80); /* lo pone de colores cuando esta arriba y sombra */
+  h2 {
+    font-size: 3rem;
+  }
+}
+#arte {
+  animation: arte 10s infinite;
+}
+#flores {
+  animation: flor 10s infinite;
+}
+#comida {
+  animation: comida 10s infinite;
+}
+#ropa {
+  animation: ropa 10s infinite;
+}
+#peli {
+  animation: peli 10s infinite;
+}
+
+@media (max-width: 1200px) {
+  #portfolio section {
+    width: 1000px;
+  }
+
+  #portfolio article {
+    min-width: 250px;
+    max-width: 250px;
+  }
+}
+@media (max-width: 1050px) {
+  #portfolio section {
+    width: 700px;
+  }
+
+  #portfolio article {
+    min-width: 200px;
+    max-width: 270px;
+    width: 100%;
+  }
+}
+@media (max-width: 750px) {
+  #portfolio section {
+    width: 80%;
+  }
+
+  #portfolio article {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+@keyframes arte {
+  0% {
+    background-image: url(assets/img/arte1.jpg);
+  }
+  25% {
+    background-image: url(assets/img/arte2.jpg);
+  }
+  50% {
+    background-image: url(assets/img/arte3.jpg);
+  }
+  75% {
+    background-image: url(assets/img/arte4.jpg);
+  }
+  100% {
+    background-image: url(assets/img/arte5.jpg);
+  }
+}
+@keyframes flor {
+  0% {
+    background-image: url(assets/img/flor1.jpg);
+  }
+  25% {
+    background-image: url(assets/img/flor2.jpg);
+  }
+  50% {
+    background-image: url(assets/img/flor3.jpg);
+  }
+  75% {
+    background-image: url(assets/img/flor4.jpg);
+  }
+  100% {
+    background-image: url(assets/img/flor5.jpg);
+  }
+}
+@keyframes comida {
+  0% {
+    background-image: url(assets/img/comida1.jpg);
+  }
+  25% {
+    background-image: url(assets/img/comida2.jpg);
+  }
+  50% {
+    background-image: url(assets/img/comida3.jpg);
+  }
+  75% {
+    background-image: url(assets/img/comida4.jpg);
+  }
+  100% {
+    background-image: url(assets/img/comida5.jpg);
+  }
+}
+@keyframes ropa {
+  0% {
+    background-image: url(assets/img/ropa1.jpg);
+  }
+  25% {
+    background-image: url(assets/img/ropa2.jpg);
+  }
+  50% {
+    background-image: url(assets/img/ropa3.jpg);
+  }
+  75% {
+    background-image: url(assets/img/ropa4.jpg);
+  }
+  100% {
+    background-image: url(assets/img/ropa5.jpg);
+  }
+}
+@keyframes peli {
+  0% {
+    background-image: url(assets/img/peli1.jpg);
+  }
+  25% {
+    background-image: url(assets/img/peli2.jpg);
+  }
+  50% {
+    background-image: url(assets/img/peli3.jpg);
+  }
+  75% {
+    background-image: url(assets/img/peli4.jpg);
+  }
+  100% {
+    background-image: url(assets/img/peli5.jpg);
+  }
+}
